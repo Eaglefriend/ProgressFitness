@@ -4,7 +4,7 @@
   "description": "A progressive web app which serves as a personal fitness coach.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "http-server -c-1"
   },
   "keywords": [
     "pwa",
@@ -17,5 +17,8 @@
     "web"
   ],
   "author": "Adrian Mosquera Rodriguez",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "http-server":"^0.10.0"
+  }
 }
