@@ -1,0 +1,43 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: lato, "sans-serif";
+  background-color: color(back); }
+
+h1 {
+  font-family: lato, "sans-serif";
+  color: color(weiss);
+  font-size: 120px;
+  margin: 0 0 2px 0;
+  text-align: left; }
+
+h2 {
+  font-family: lato-black, "sans-serif";
+  color: color(weiss);
+  font-size: 100px; }
+
+h3 {
+  font-family: lato-bold, "sans-serif";
+  color: color(weiss);
+  font-size: 100px; }
+
+p {
+  font-family: lato-light, "sans-serif";
+  color: color(weiss);
+  font-size: 22px; }
+
+@font-face {
+  src: url("../fonts/Lato-Regular.ttf");
+  font-family: lato; }
+@font-face {
+  src: url("../fonts/Lato-Light.ttf");
+  font-family: lato-light; }
+@font-face {
+  src: url("../fonts/Lato-Black");
+  font-family: lato-black; }
+@font-face {
+  src: url("../fonts/Lato-Bold");
+  font-family: lato-bold; }
+
+/*# sourceMappingURL=styles.css.map */
