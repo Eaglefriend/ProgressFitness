@@ -1,0 +1,4 @@
+/*Colors*/
+@function color($farbe){
+    @return map_get($colors,$farbe);
+  }

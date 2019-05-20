@@ -1,0 +1,21 @@
+{
+  "name": "progress-fitness",
+  "version": "1.0.0",
+  "description": "A progressive web app which serves as a personal fitness coach.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "pwa",
+    "fitness",
+    "progressive",
+    "fitness",
+    "progressFitness",
+    "progressive",
+    "app",
+    "web"
+  ],
+  "author": "Adrian Mosquera Rodriguez",
+  "license": "ISC"
+}
