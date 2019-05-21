@@ -1,43 +1,57 @@
+/*Variablen*/
+/*Colors*/
 body, html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   font-family: lato, "sans-serif";
-  background-color: color(back); }
+  background-color: #0B3C48;
+  color: #fff; }
 
 h1 {
   font-family: lato, "sans-serif";
-  color: color(weiss);
-  font-size: 120px;
+  font-size: 27px;
   margin: 0 0 2px 0;
   text-align: left; }
 
 h2 {
-  font-family: lato-black, "sans-serif";
-  color: color(weiss);
-  font-size: 100px; }
+  font-family: lato-bold, "sans-serif";
+  font-size: 18px; }
 
 h3 {
-  font-family: lato-bold, "sans-serif";
-  color: color(weiss);
-  font-size: 100px; }
+  font-family: lato-black, "sans-serif";
+  font-size: 25px; }
+
+h4 {
+  font-family: lato-light, "sans-serif";
+  font-size: 20px; }
+
+h5 {
+  font-family: lato-light_italic, "sans-serif";
+  font-size: 13px; }
 
 p {
-  font-family: lato-light, "sans-serif";
-  color: color(weiss);
-  font-size: 22px; }
+  font-family: lato, "sans-serif";
+  font-size: 13px; }
+
+img {
+  max-width: 100vw;
+  height: auto; }
 
 @font-face {
-  src: url("../fonts/Lato-Regular.ttf");
+  src: url(../../fonts/Lato-Regular.ttf);
   font-family: lato; }
 @font-face {
-  src: url("../fonts/Lato-Light.ttf");
-  font-family: lato-light; }
-@font-face {
-  src: url("../fonts/Lato-Black");
+  src: url(../../fonts/Lato-Black.ttf);
   font-family: lato-black; }
 @font-face {
-  src: url("../fonts/Lato-Bold");
+  src: url(../../fonts/Lato-Bold.ttf);
   font-family: lato-bold; }
+@font-face {
+  src: url(../../fonts/Lato-Light.ttf);
+  font-family: lato-light; }
+@font-face {
+  src: url(../../fonts/Lato-LightItalic.ttf);
+  font-family: lato-light-italic; }
 
 /*# sourceMappingURL=styles.css.map */
