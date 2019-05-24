@@ -1,0 +1,18 @@
+.challenges{
+    
+    &__title{
+        grid-area: "header";
+    }   
+
+    &__endurance{
+        grid-area: "challenges_endurance";
+    }
+
+    &__strength{
+        grid-area: "challenges_strength";
+    }
+
+    &__mass{
+        grid-area: "challenges_mass";
+    }
+}

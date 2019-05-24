@@ -1,0 +1,11 @@
+.challenges{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+            "header"
+            "challenges_endurance"
+            "challenges_strength"
+            "challenges_mass" 
+            ;
+}
