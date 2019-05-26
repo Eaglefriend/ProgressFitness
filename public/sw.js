@@ -7,7 +7,8 @@ self.addEventListener('activate', function(event){
     return self.clients.claim();
 });
 
+//Listen to non-livecycle-event
 self.addEventListener('fetch', function(event){
     console.log("[Service Worker] Fetching something ...", event);
-    event.respondWith(fetch(event.request));
-})
+    event.respondWith(fetch(event.request)); //overwrite data which gets send back -> return fetch request
+});
