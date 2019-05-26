@@ -1,7 +1,7 @@
 .challenges{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10vh 30vh 30vh 30vh;
     grid-template-areas:
             "header"
             "challenges_endurance"
