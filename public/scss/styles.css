@@ -60,12 +60,22 @@ img {
   grid-template-areas: "header" "challenges_endurance" "challenges_strength" "challenges_mass"; }
 
 .challenges__title {
-  grid-area: "header"; }
+  grid-area: "header";
+  margin-left: 5vw; }
 .challenges__endurance {
   grid-area: "challenges_endurance"; }
 .challenges__strength {
   grid-area: "challenges_strength"; }
 .challenges__mass {
   grid-area: "challenges_mass"; }
+
+.addToHomescreenButton {
+  position: fixed;
+  left: 50%;
+  bottom: 3vh;
+  margin-left: -25px; }
+  .addToHomescreenButton__img {
+    width: 50px;
+    height: 50px; }
 
 /*# sourceMappingURL=styles.css.map */

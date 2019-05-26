@@ -1,11 +1,42 @@
-.challenges{
+.challenges__grid{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10vh 30vh 30vh 30vh;
+    grid-template-rows: repeat(4, 1fr);
     grid-template-areas:
-            "header"
+            "head"
             "challenges_endurance"
             "challenges_strength"
             "challenges_mass" 
             ;
+}
+           
+.challenges__title{
+    grid-area: head;
+    margin-left: 1vw;
+    margin-top: 3vw;
+}
+
+.challenges__endurance{
+    grid-area: challenges_endurance;
+}
+
+.challenges__strength{
+    grid-area: challenges_strength;
+}
+
+.challenges__mass{
+    grid-area: challenges_mass;
+}
+           
+        
+.addToHomescreenButton{
+    position: fixed;
+    left: 50%;
+    bottom: 3vh;
+    margin-left: -25px;
+
+    &__img{
+        width: 50px;
+        height: 50px;
+    }
 }

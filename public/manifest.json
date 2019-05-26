@@ -43,7 +43,7 @@
     "display": "standalone",
     "orientation": "portrait-primary",
     "background_color":"#0B3C48",
-    "theme_color":"#FFF",
+    "theme_color":"#2196F3",
     "dir": "ltr",
     "lang": "en-US"
 }
