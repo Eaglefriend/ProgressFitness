@@ -53,21 +53,23 @@ img {
 @font-face {
   src: url(../../fonts/Lato-LightItalic.ttf);
   font-family: lato-light-italic; }
-.challenges {
+.challenges__grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 10vh 30vh 30vh 30vh;
-  grid-template-areas: "header" "challenges_endurance" "challenges_strength" "challenges_mass"; }
+  grid-template-rows: 5vh 30vh 30vh 30vh;
+  grid-template-areas: "title" "ch_endurance" "ch_strength" "ch_mass"; }
 
 .challenges__title {
-  grid-area: "header";
-  margin-left: 5vw; }
+  grid-area: title; }
+
 .challenges__endurance {
-  grid-area: "challenges_endurance"; }
+  grid-area: ch_endurance; }
+
 .challenges__strength {
-  grid-area: "challenges_strength"; }
+  grid-area: ch_strength; }
+
 .challenges__mass {
-  grid-area: "challenges_mass"; }
+  grid-area: ch_mass; }
 
 .addToHomescreenButton {
   position: fixed;

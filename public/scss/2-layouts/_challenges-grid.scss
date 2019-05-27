@@ -1,29 +1,29 @@
 .challenges__grid{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: 5vh 30vh 30vh 30vh;
     grid-template-areas:
-            "head"
-            "challenges_endurance"
-            "challenges_strength"
-            "challenges_mass" 
+            "title"
+            "ch_endurance"
+            "ch_strength"
+            "ch_mass" 
             ;
 }
            
 .challenges__title{
-    grid-area: head;
+    grid-area: title;
 }
 
 .challenges__endurance{
-    grid-area: challenges_endurance;
+    grid-area: ch_endurance;
 }
 
 .challenges__strength{
-    grid-area: challenges_strength;
+    grid-area: ch_strength;
 }
 
 .challenges__mass{
-    grid-area: challenges_mass;
+    grid-area: ch_mass;
 }
            
         
