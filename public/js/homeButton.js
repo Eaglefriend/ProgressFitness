@@ -25,12 +25,14 @@ const openAddToHomescreenBanner =()=>{
 athsb.addEventListener('click', openAddToHomescreenBanner);
 */
 
-
+/*
 let deferredPrompt;
-let btnAdd = document.querySelector('#btnAdd');
+let btnAdd = document.getElementById('btnAdd');
 
 window.addEventListener('beforeInstallPrompt', e=>{
     e.preventDefault();
+
+    console.log(defferedPrompt);
 
     defferedPrompt = e;
 
@@ -54,3 +56,4 @@ btnAdd.addEventListener('click', (e) => {
         deferredPrompt = null;
       });
   });
+  */
