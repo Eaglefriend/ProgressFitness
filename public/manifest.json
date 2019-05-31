@@ -38,12 +38,14 @@
             "sizes": "512x512"
         }
     ],
-    "start_url":".",
+    "start_url":"/index.html",
     "scope": ".",
     "display": "standalone",
     "orientation": "portrait-primary",
     "background_color":"#0B3C48",
     "theme_color":"#2196F3",
     "dir": "ltr",
-    "lang": "en-US"
+    "lang": "en-US",
+    "prefer_related_applications": false
+
 }
