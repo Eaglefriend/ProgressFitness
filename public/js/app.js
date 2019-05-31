@@ -86,4 +86,4 @@ promise.then(function(text){
 */
 
 /*console.log('This is executed right after setTimeout()');*/
->>>>>>> sw
+
