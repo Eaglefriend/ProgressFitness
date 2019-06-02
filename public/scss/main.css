@@ -1,0 +1,170 @@
+/*Variablen*/
+/*Colors*/
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: lato, "sans-serif";
+  background-color: #0B3C48;
+  color: #FFF;
+}
+
+h1 {
+  font-family: lato, "sans-serif";
+  font-size: 27px;
+  margin: 0 0 2px 0;
+  text-align: left;
+}
+
+h2 {
+  font-family: lato-bold, "sans-serif";
+  font-size: 18px;
+}
+
+h3 {
+  font-family: lato-black, "sans-serif";
+  font-size: 25px;
+}
+
+h4 {
+  font-family: lato-light, "sans-serif";
+  font-size: 20px;
+}
+
+h5 {
+  font-family: lato-light_italic, "sans-serif";
+  font-size: 13px;
+}
+
+p {
+  font-family: lato, "sans-serif";
+  font-size: 13px;
+}
+
+img {
+  max-width: 100vw;
+  height: auto;
+}
+
+@font-face {
+  src: url(../../fonts/Lato-Regular.ttf);
+  font-family: lato;
+}
+
+@font-face {
+  src: url(../../fonts/Lato-Black.ttf);
+  font-family: lato-black;
+}
+
+@font-face {
+  src: url(../../fonts/Lato-Bold.ttf);
+  font-family: lato-bold;
+}
+
+@font-face {
+  src: url(../../fonts/Lato-Light.ttf);
+  font-family: lato-light;
+}
+
+@font-face {
+  src: url(../../fonts/Lato-LightItalic.ttf);
+  font-family: lato-light-italic;
+}
+
+.challenges__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 5vh 40vh 40vh 40vh;
+      grid-template-rows: 5vh 40vh 40vh 40vh;
+      grid-template-areas: "title" "ch_endurance" "ch_strength" "ch_mass";
+}
+
+.challenges__title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: title;
+  -ms-grid-column-align: left;
+      justify-self: left;
+  margin-left: 5vw;
+}
+
+.challenges__endurance {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: ch_endurance;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-areas: ". . ." ". ch_name ." ". . .";
+}
+
+.challenges__strength {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: ch_strength;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-areas: ". . ." ". ch_name ." ". . .";
+}
+
+.challenges__mass {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: ch_mass;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-areas: ". . ." ". ch_name ." ". . .";
+}
+
+.challenges__names {
+  z-index: 10;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: ch_name;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.challenges__img {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: ch_name;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.addToHomescreenButton {
+  position: fixed;
+  left: 50%;
+  bottom: 3vh;
+  margin-left: -25px;
+}
+
+.addToHomescreenButton__img {
+  /*display: none;*/
+  width: 50px;
+  height: 50px;
+}
+/*# sourceMappingURL=main.css.map */

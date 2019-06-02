@@ -1,10 +1,13 @@
 const cacheName = 'v1';
 
 const cacheAssets = [
+    '/',
     'index.html',
     'scss/styles.css',
     'js/app.js',
-    'js/homeButton.js'
+    'js/homeButton.js',
+    'js/fetch.js',
+    'js/promise.js'
 ];
 
 
@@ -13,12 +16,12 @@ self.addEventListener('install', e =>{
     console.log('Service Worker: Installed');
 
     //Caching Assets
-    e.waitUntil(    //Wait until Promise is finished
+    e.waitUntil(    //Wait with finishing install event until Promise is finished
         caches
             .open(cacheName)    //opens Cache
             .then(cache =>{     //Cache-Object
                 console.log('Service Worker: Caching files');
-                cache.addAll(cacheAssets);  //put Assets in Cache-Object
+                cache.addAll(cacheAssets);  //put Assets-Array in Cache-Object
             })
             .then(()=> self.skipWaiting()) //Skips waiting after finished caching
     );
@@ -50,16 +53,18 @@ self.addEventListener('fetch', e=>{
     console.log('Service Worker: Fetching');
 
     e.respondWith(
-        fetch(e.request).catch(()=> caches.match(e.request)));        //if there is no connection to the network and initial request failes, then catch by loading e.request form the cache!
+        fetch(e.request).catch(()=> caches.match(e.request)) //if there is no connection to the network and initial request failes, then catch by loading e.request form the cache!
+            .then((res)=>{
+                caches.open('dynamic')
+                    .then((cache)=>{
+                        cache.put(e.request.url, res.clone())
+                        return res;
+                    })
+            })
+
+    );       
 });
 
 
-/*
-//Listen to non-livecycle-event
-self.addEventListener('fetch', function(event){
-    console.log("[Service Worker] Fetching something ...", event);
-    event.respondWith(fetch(event.request)); //overwrite data which gets send back -> return fetch request
-});
 
-*/
 

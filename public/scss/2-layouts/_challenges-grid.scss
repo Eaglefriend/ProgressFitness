@@ -1,32 +1,72 @@
 .challenges__grid{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 5vh 30vh 30vh 30vh;
+    grid-template-rows: 5vh 40vh 40vh 40vh;
     grid-template-areas:
             "title"
             "ch_endurance"
             "ch_strength"
             "ch_mass" 
             ;
+  
 }
            
 .challenges__title{
     grid-area: title;
+    justify-self: left;
+    margin-left: 5vw;
 }
 
 .challenges__endurance{
     grid-area: ch_endurance;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas:
+    ". . ."
+    ". ch_name ."
+    ". . .";
 }
 
 .challenges__strength{
     grid-area: ch_strength;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas:
+    ". . ."
+    ". ch_name ."
+    ". . .";
 }
+
 
 .challenges__mass{
     grid-area: ch_mass;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas:
+    ". . ."
+    ". ch_name ."
+    ". . .";
 }
+
            
-        
+.challenges__names{
+    z-index: 10;
+    grid-area: ch_name;
+    justify-self: center;
+    align-self: center;
+}        
+
+.challenges__img{
+    grid-area: ch_name;
+    justify-self: center;
+}
+
 .addToHomescreenButton{
     position: fixed;
     left: 50%;
