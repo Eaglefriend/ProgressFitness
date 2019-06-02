@@ -22,24 +22,28 @@
     </head>
     <body>
         <section class="challenges__grid">
-            <h1 class="challenges__title">Challenges</h1>
+            <h2 class="challenges__title">Challenges</h1>
+
             <div class="challenges__endurance">
-                <h2 class="challenges__names">Endurance</h2>
-                <a class="challenges__img" href="#">
-                    <img src="media/img/endurance_challenge.jpx" alt="endurance_challenge">
+                <h3 id="ch_names_endurance" class="challenges__names">Endurance</h2>
+                <a  id="ch_img_endurance" class="challenges__img" href="#">
+                    <img class="challenges__img_innen" src="media/img/endurance_challenge.jpx" alt="endurance_challenge">
                 </a>
+                <a class="challenges__overlay" href='#'></a>
             </div>
             <div class="challenges__strength">
-                <h2 class="challenges__names">Strength</h2>
-                <a class="challenges__img" href="#">
-                    <img src="media/img/strength_challenge.jpx" alt="strength_challenge">
+                <h3 id="ch_names_strength" class="challenges__names">Strength</h2>
+                <a id="ch_img_strength" class="challenges__img" href='#''>
+                    <img class="challenges__img_innen" src="media/img/strength_challenge.jpx" alt="strength_challenge">
                 </a>
+                <a class="challenges__overlay" href='#'></a>
             </div>
             <div class="challenges__mass">
-                <h2 class="challenges__names">Mass</h2>
-                <a class="challenges__img" href="#">
-                    <img src="media/img/mass_challenge.jpx" alt="mass_challenge">
+                <h3 id="ch_names_mass" class="challenges__names">Mass</h2>
+                <a id="ch_img_mass" class="challenges__img" href="#">
+                    <img class="challenges__img_innen" src="media/img/mass_challenge.jpx" alt="mass_challenge">
                 </a>
+                <a class="challenges__overlay" href='#'></a>
             </div>
         </section>
 
@@ -48,6 +52,9 @@
             <img id="btnAdd" class="addToHomescreenButton addToHomescreenButton__img" src="media/img/buttons/add_to_homescreen_button.jpx" alt="add_to_homescreen_button">
         </a>
     
+        <script src="js/main.js"></script>
+        <script src="js/promise.js"></script>
+        <script src="js/fetch.js"></script>
         <script src="js/homeButton.js"></script>
         <script src="js/app.js"></script>
         
