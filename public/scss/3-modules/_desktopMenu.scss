@@ -1,0 +1,45 @@
+.desktopMenu{
+    position: fixed;
+    width: 100vw;
+    height: 6vh;
+    background-color: color(orang);
+    
+    .openNav{
+        .menuBtn_dsk{
+                width: 4vw;
+                height: 4vh;
+
+            .menuBtn_dsk_color:hover{
+                fill: color(orang);
+            }
+        }
+    }
+
+    .sideNav{
+        .closeNav{
+            .closeMenuBtn_dsk{
+                    width: 2vw;
+                    height: 2vh;
+
+                .closeMenuBtn_dsk_color:hover{
+                    fill: color(weiss);
+                }
+            }
+        }
+
+        &__punkte{
+            &__feed{
+
+            }
+            &__training{
+
+            }
+            &__profil{
+
+            }
+        }
+        &__punkte:hover{
+            color: color(orang);
+        }
+    }
+}

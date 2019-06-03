@@ -1,12 +1,13 @@
 .challenges__grid{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10vh 39vh 39vh 39vh;
+    grid-template-rows: 10vh 39vh 39vh 39vh 10vh;
     grid-template-areas:
             "title"
             "ch_endurance"
             "ch_strength"
-            "ch_mass" 
+            "ch_mass"
+            "ch_mmPlz" 
             ;
   align-items: center; 
 }
@@ -99,8 +100,8 @@
     grid-area: ch_name;
     justify-self: center;
     overflow: hidden;
-    width: 500px;
-    height: 350px;
+    max-width: 500px;
+    max-height: 350px;
 }
 
 .challenges__img_innen{
@@ -118,7 +119,7 @@
 }
 
 
-
+/*
 .addToHomescreenButton{
     z-index: 20;
     position: fixed;
@@ -128,8 +129,12 @@
     bottom: 1%;
 
     &__img{
-        /*display: none;*/
+        display: none;
         width: 35px;
         height: 35px;
     }
+}*/
+
+.mobileMenuPlatzhalter{
+    grid-area: mmPlz;
 }
