@@ -4,122 +4,122 @@
     display: grid;
     bottom: 0;
     width: 100vw;
-    height: 10vh;
+    height: 12vh;
     background-color: color(menu);
     border-top: 1px solid color(orang);
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 10vh;
+    grid-template-rows: 1fr;
     grid-template-areas: 
         "menuIconLinks menuIconMitte menuIconRechts";
-}
 
-.menuLinks{
-    grid-area: menuIconLinks;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 5vh 5vh;
-    grid-template-areas: 
-        "menuIconLinksImg"
-        "menuIconLinksName"
+    .menuLinks{
+        grid-area: menuIconLinks;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 5vh 5vh;
+        grid-template-areas: 
+            "menuIconLinksImg"
+            "menuIconLinksName"
+            ;
+        justify-items: center;
+        align-content: start;
+
+        &__icon{
+            grid-area: menuIconLinksImg;
+            margin-top: 10px;
+            width: 40px;
+            height: 5vh;
+            transition: 0.3s ease;
+        }
+        &__name{
+            grid-area: menuIconLinksName;
+            margin-top: 10px;
+            transition: 0.3s ease;
+            
+        }
+    }
+    .menuLinks:hover .menuLinks__icon .color{
+        fill: color(weiss);
+    }
+    .menuLinks:hover .menuLinks__icon{
+        transform: scale(1.1);
+    }
+    .menuLinks:hover .menuLinks__name{
+        margin-top: 11px;
+    }
+
+    .menuMitte{
+        grid-area: menuIconMitte;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 5vh 5vh;
+        grid-template-areas: 
+        "menuIconMitteImg"
+        "menuIconMitteName"
         ;
-    justify-items: center;
-    align-content: start;
+        justify-items: center;
 
-    &__icon{
-        grid-area: menuIconLinksImg;
-        margin-top: 10px;
-        width: 40px;
-        height: 5vh;
+        &__icon{
+            grid-area: menuIconMitteImg;
+            margin-top: 10px;
+            width: 40px;
+            height: 5vh;
+            transition: 0.3s ease;
+        }
+        &__name{
+            grid-area: menuIconMitteName;
+            margin-top: 10px;
+            transition: 0.3s ease;
+        }
+    }
+    .menuMitte:hover .menuMitte__icon .color{
+        fill: color(weiss);
         transition: 0.3s ease;
     }
-    &__name{
-        grid-area: menuIconLinksName;
-        margin-top: 10px;
-        transition: 0.3s ease;
-        
+    .menuMitte:hover .menuMitte__icon{
+        transform: scale(1.1);
     }
-}
-.menuLinks:hover .menuLinks__icon .color{
-    fill: color(weiss);
-}
-.menuLinks:hover .menuLinks__icon{
-    transform: scale(1.1);
-}
-.menuLinks:hover .menuLinks__name{
+    .menuMitte:hover .menuMitte__name{
     margin-top: 11px;
-}
+    }
 
-.menuMitte{
-    grid-area: menuIconMitte;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 5vh 5vh;
-    grid-template-areas: 
-    "menuIconMitteImg"
-    "menuIconMitteName"
-    ;
-    justify-items: center;
+    .menuRechts{
+        grid-area: menuIconRechts;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 5vh 5vh;
+        grid-template-areas: 
+        "menuIconRechtsImg"
+        "menuIconRechtsName"
+        ;
+        justify-items: center;
 
-    &__icon{
-        grid-area: menuIconMitteImg;
-        margin-top: 10px;
-        width: 40px;
-        height: 5vh;
+        &__icon{
+            grid-area: menuIconRechtsImg;
+            margin-top: 10px;
+            width: 40px;
+            height: 5vh;
+            transition: 0.3s ease;
+        }
+        &__name{
+            grid-area: menuIconRechtsName;
+            margin-top: 10px;
+            transition: 0.3s ease;
+        }
+    }
+    .menuRechts:hover .menuRechts__icon .color{
+        fill: color(weiss);
         transition: 0.3s ease;
     }
-    &__name{
-        grid-area: menuIconMitteName;
-        margin-top: 10px;
-        transition: 0.3s ease;
+    .menuRechts:hover .menuRechts__icon{
+        transform: scale(1.1);
     }
-}
-.menuMitte:hover .menuMitte__icon .color{
-    fill: color(weiss);
-    transition: 0.3s ease;
-}
-.menuMitte:hover .menuMitte__icon{
-    transform: scale(1.1);
-}
-.menuMitte:hover .menuMitte__name{
-   margin-top: 11px;
+    .menuRechts:hover .menuRechts__name{
+        margin-top: 11px;
+    }
+
 }
 
-.menuRechts{
-    grid-area: menuIconRechts;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 5vh 5vh;
-    grid-template-areas: 
-    "menuIconRechtsImg"
-    "menuIconRechtsName"
-    ;
-    justify-items: center;
-
-    &__icon{
-        grid-area: menuIconRechtsImg;
-        margin-top: 10px;
-        width: 40px;
-        height: 5vh;
-        transition: 0.3s ease;
-    }
-    &__name{
-        grid-area: menuIconRechtsName;
-        margin-top: 10px;
-        transition: 0.3s ease;
-    }
-}
-.menuRechts:hover .menuRechts__icon .color{
-    fill: color(weiss);
-    transition: 0.3s ease;
-}
-.menuRechts:hover .menuRechts__icon{
-    transform: scale(1.1);
-}
-.menuRechts:hover .menuRechts__name{
-    margin-top: 11px;
-}
-
-.menu{
-    width: 40px;
-    height: 40px;
+.desktopMenu{
+    display: none;
 }

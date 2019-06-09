@@ -1,9 +1,11 @@
 
-//Menu
-//Variante unteres Menü
+
 
 @media screen and (min-width: 1024px){
-    .mobileMenu{
+    
+//Menu
+//Variante mobile Menu auf desktop
+  /*  .mobileMenu{
         border-top: none;
     }
     .menuLinks{
@@ -46,41 +48,145 @@
         width: 40px;
         height: 40px;
     }
-}
 
-//Challenges Grid
-/*
-.challenges__grid{
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 10vh 39vh 39vh 39vh 10vh;
-    grid-template-areas:
-            "title . . "
-            "ch_endurance ch_strength ch_mass"
-            "ch_mass_1 ch_endurance_1 ch_strength_1"
-            "ch_mass_2 ch_strength_2 ch_endurance_2"
-            "ch_mmPlz ch_mmPlz ch_mmPlz" 
-            ;
-}
+    */
 
-.challenges__endurance_1{
-    grid-area: ch_endurance_1;
-}
-.challenges__endurance_1{
-    grid-area: ch_endurance_2;
-}
 
-.challenges__strength_1{
-    grid-area: ch_strength_1;
-}
-.challenges__strength_2{
-    grid-area: ch_strength_2;
-}
+    /*Desktop Menu*/
+    .mobileMenu{
+        display: none;
+    }
 
-.challenges__mass_1{
-    grid-area: ch_mass_1;
-}
-.challenges__mass_2{
-    grid-area: ch_mass_2;
-}
+    .desktopMenu{
+        display: block;
+    
+        .headBar__container{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            position: absolute;
+            width: 100vw;
+            height: 6vh;
+            background-color: color(back);
+            overflow: hidden;
 
-*/
+            .headBar{
+            z-index: 40;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+            position: fixed;
+            width: 25vw;
+            height: 6vh;
+
+                .openNav{
+                    width: 2vw;
+                    height: 2vh;
+                    margin-right: 30px;
+                    margin-top: 10px; 
+                    cursor: pointer;
+
+                    .openNavBtn{
+                        .navBtn_dsk_color{
+                        transition: 0.125s ease-in-out;
+                        }
+                    }
+                }
+                
+
+                .openNav:hover .openNavBtn .navBtn_dsk_color{
+                            stroke: color(orang);
+                }
+            
+            }
+        }
+        
+
+        .sideNav_container{
+            display: none;
+            justify-content: flex-end;
+            align-items: flex-start;
+            position: absolute;
+            width: 100vw;
+            height: 127vh;
+
+            .sideNav{ 
+                z-index: 30;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 6vh 1fr 1fr 1fr;
+                grid-template-areas:
+                    "btn_pH"
+                    "feed_nav"
+                    "training_nav"
+                    "profil_nav"
+                ;
+                justify-items: center;
+                align-items: start;
+                width: 100vw;
+                height: 127vh;
+                background-color: color(menuov);
+
+                &__btn_pH{
+                    grid-area: btn_pH;
+                }
+
+                &__feed{
+                    grid-area: feed_nav;
+
+                }
+                &__training{
+                    grid-area: training_nav;
+                }
+                &__profil{
+                    grid-area: profil_nav;
+                }
+            }
+            .sN_h:hover{
+                    color: color(orang);
+                }
+        }
+    }
+    
+
+    //Challenges Grid
+
+    .challenges__grid{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 10vh 39vh 39vh 39vh;
+        grid-template-areas:
+                "title . . "
+                "ch_endurance ch_strength ch_mass"
+                " ch_endurance_1 ch_mass_1 ch_strength_1"
+                "ch_mass_2 ch_strength_2 ch_endurance_2"
+                ;
+    
+
+        .challenges__title{
+            grid-area: title;
+            font-size: 3em;
+        }
+
+        .challenges__endurance_1{
+            grid-area: ch_endurance_1;
+        }
+        .challenges__endurance_2{
+            grid-area: ch_endurance_2;
+        }
+
+        .challenges__strength_1{
+            grid-area: ch_strength_1;
+        }
+        .challenges__strength_2{
+            grid-area: ch_strength_2;
+        }
+
+        .challenges__mass_1{
+            grid-area: ch_mass_1;
+        }
+        .challenges__mass_2{
+            grid-area: ch_mass_2;
+        }
+    }
+
+}
