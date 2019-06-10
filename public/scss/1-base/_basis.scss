@@ -1,16 +1,16 @@
-body, html{margin: 0; padding: 0; overflow-x: hidden; font-family: lato, "sans-serif"; background-color: color(back); color: color(weiss)}
+body, html{margin: 0; padding: 0; overflow-x: hidden; font-family: 'Lato', sans-serif; background-color: color(back); color: color(weiss)}
 
 //Headlines
-h1{font-family: lato-black-italic, "sans-serif"; font-size: 40px; margin:0 0 2px 0; text-align: left;}
-h2{font-family: lato-bold-italic, "sans-serif"; font-size: 25px;}
-h3{font-family: lato-black-italic, "sans-serif"; font-size: 25px}
-h4{font-family: lato-bold, "sans-serif"; font-size: 18px;}
-h5{font-family: lato-italic, "sans-serif"; font-size: 15px; color: color(orang)}
+h1{font-weight: 900; font-style: italic; font-size: 40px; margin:0 0 2px 0; text-align: left;}
+h2{font-weight: 700; font-style: italic; font-size: 25px;}
+h3{font-weight: 900; font-style: italic; font-size: 25px}
+h4{font-weight: 700; font-size: 18px;}
+h5{font-weight: 400; font-style: italic; font-size: 15px; color: color(orang)}
 
 //Texts
-p{font-family: lato, "sans-serif"; font-size: 18px;}
-a{font-family: lato-light, "sans-serif"; font-size: 20px; color: color(weiss); text-decoration: none;}
-a p{font-family: lato, "sans-serif"; font-size: 13px; color: color(weiss); text-decoration: none;}
+p{font-weight: 400; font-size: 18px;}
+a{font-weight: 300; font-size: 20px; color: color(weiss); text-decoration: none;}
+a p{font-weight: 400; font-size: 13px; color: color(weiss); text-decoration: none;}
 
 //Bilder
 img{max-width: 100vw; height: auto;}

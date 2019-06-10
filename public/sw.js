@@ -1,10 +1,11 @@
-const cacheName = 'v1';
+/*const cacheName = 'v1';
 
 const cacheAssets = [
     '/',
     'index.html',
-    'scss/styles.css',
+    'scss/main.css',
     'js/app.js',
+    'js/main.js',
     'js/homeButton.js',
     'js/fetch.js',
     'js/promise.js'
@@ -65,6 +66,16 @@ self.addEventListener('fetch', e=>{
     );       
 });
 
+*/
 
+self.addEventListener('install', evt =>{
+    console.log('Service Worker installed!');
+});
 
+self.addEventListener('activate', evt =>{
+    console.log('Service Worker activated!');
+});
 
+self.addEventListener('fetch', evt =>{
+    console.log('fetch event:', evt);
+});

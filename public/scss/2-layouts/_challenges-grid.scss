@@ -1,37 +1,23 @@
 .challenges__grid{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10vh 39vh 39vh 39vh 39vh 39vh 39vh 39vh 39vh 39vh 12vh;
-    grid-template-areas:
-            "title"
-            "ch_endurance"
-            "ch_strength"
-            "ch_mass"
-            "ch_endurance_1"
-            "ch_strength_1"
-            "ch_mass_1"
-            "ch_endurance_2"
-            "ch_strength_2"
-            "ch_mass_2"
-            "ch_mmPlz" 
-            ;
+    grid-auto-rows: minmax(10vh,auto);
   align-items: center; 
   width: 100vw;
   position: relative;
+  grid-row-gap: 0px;
 }
            
 .challenges__title{
     z-index: 30;
-    grid-area: title;
     justify-self: left;
     margin-left: 5vw;
     margin-top: 2vh;
-    
 }
 
-.challenges__endurance{
-    grid-area: ch_endurance;
+.challenges__challenge{
     justify-self: center;
+    margin-top: -4px;
     display: grid;
     position: relative;
     grid-template-columns: 1fr;
@@ -39,187 +25,16 @@
     grid-template-areas:
     "ch_name"
     ;
-}
-.challenges__endurance:hover .challenges__overlay{
-    opacity: 1;
-}
-.challenges__endurance:hover .challenges__names{
-    border: 2px solid color(weiss);
-    font-size: 24px;
-}
-.challenges__endurance:hover .challenges__img .challenges__img_innen{
-  transform: scale(1.05);
-}
 
-.challenges__strength{
-    grid-area: ch_strength;
-    justify-self: center;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-    "ch_name"
-    ;
 }
-.challenges__strength:hover .challenges__overlay{
+.challenges__challenge:hover .challenges__overlay{
     opacity: 1;
 }
-.challenges__strength:hover .challenges__names{
+.challenges__challenge:hover .challenges__names{
     border: 2px solid color(weiss);
     font-size: 24px;
 }
-.challenges__strength:hover .challenges__img .challenges__img_innen{
-  transform: scale(1.05);
-}
-
-.challenges__mass{
-    grid-area: ch_mass;
-    justify-self: center;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:  
-    "ch_name"
-    ;
-}
-.challenges__mass:hover .challenges__overlay{
-    opacity: 1;
-}
-.challenges__mass:hover .challenges__names{
-    border: 2px solid color(weiss);
-    font-size: 24px;
-}
-.challenges__mass:hover .challenges__img .challenges__img_innen{
-  transform: scale(1.05);
-}
-
-//extra inhalte -> später dynamisch cachen wenn user mehr anzeigen clickt
-.challenges__endurance_1{
-    grid-area: ch_endurance_1;
-    justify-self: center;
-    display: grid;
-    position: relative;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-    "ch_name"
-    ;
-}
-.challenges__endurance_1:hover .challenges__overlay{
-    opacity: 1;
-}
-.challenges__endurance_1:hover .challenges__names{
-    border: 2px solid color(weiss);
-    font-size: 24px;
-}
-.challenges__endurance_1:hover .challenges__img .challenges__img_innen{
-  transform: scale(1.05);
-}
-
-.challenges__strength_1{
-    grid-area: ch_strength_1;
-    justify-self: center;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-    "ch_name"
-    ;
-}
-.challenges__strength_1:hover .challenges__overlay{
-    opacity: 1;
-}
-.challenges__strength_1:hover .challenges__names{
-    border: 2px solid color(weiss);
-    font-size: 24px;
-}
-.challenges__strength_1:hover .challenges__img .challenges__img_innen{
-  transform: scale(1.05);
-}
-
-.challenges__mass_1{
-    grid-area: ch_mass_1;
-    justify-self: center;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:  
-    "ch_name"
-    ;
-}
-.challenges__mass_1:hover .challenges__overlay{
-    opacity: 1;
-}
-.challenges__mass_1:hover .challenges__names{
-    border: 2px solid color(weiss);
-    font-size: 24px;
-}
-.challenges__mass_1:hover .challenges__img .challenges__img_innen{
-  transform: scale(1.05);
-}
-
-//2.teil mehr inhalte
-.challenges__endurance_2{
-    grid-area: ch_endurance_2;
-    justify-self: center;
-    display: grid;
-    position: relative;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-    "ch_name"
-    ;
-}
-.challenges__endurance_2:hover .challenges__overlay{
-    opacity: 1;
-}
-.challenges__endurance_2:hover .challenges__names{
-    border: 2px solid color(weiss);
-    font-size: 24px;
-}
-.challenges__endurance_2:hover .challenges__img .challenges__img_innen{
-  transform: scale(1.05);
-}
-
-.challenges__strength_2{
-    grid-area: ch_strength_2;
-    justify-self: center;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-    "ch_name"
-    ;
-}
-.challenges__strength_2:hover .challenges__overlay{
-    opacity: 1;
-}
-.challenges__strength_2:hover .challenges__names{
-    border: 2px solid color(weiss);
-    font-size: 24px;
-}
-.challenges__strength_2:hover .challenges__img .challenges__img_innen{
-  transform: scale(1.05);
-}
-
-.challenges__mass_2{
-    grid-area: ch_mass_2;
-    justify-self: center;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:  
-    "ch_name"
-    ;
-}
-.challenges__mass_2:hover .challenges__overlay{
-    opacity: 1;
-}
-.challenges__mass_2:hover .challenges__names{
-    border: 2px solid color(weiss);
-    font-size: 24px;
-}
-.challenges__mass_2:hover .challenges__img .challenges__img_innen{
+.challenges__challenge:hover .challenges__img .challenges__img_innen{
   transform: scale(1.05);
 }
 
@@ -257,7 +72,6 @@
     cursor: pointer;
 }
 
-
 /*
 .addToHomescreenButton{
     z-index: 20;
@@ -274,6 +88,3 @@
     }
 }*/
 
-.mobileMenuPlatzhalter{
-    grid-area: mmPlz;
-}
