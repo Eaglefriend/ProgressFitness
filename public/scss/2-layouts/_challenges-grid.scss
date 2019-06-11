@@ -26,6 +26,43 @@
     "ch_name"
     ;
 
+//Challenges Inhalt
+   .challenges__link{ 
+            z-index: 10;
+            grid-area: ch_name;
+            justify-self: center;
+            align-self: center; 
+           
+        .challenges__names{
+             border: 2px solid color(orang);
+            padding: 8px 18px;
+            transition: 0.3s ease;
+            cursor: pointer;
+        }        
+    }
+   
+    .challenges__img{
+        grid-area: ch_name;
+        justify-self: center;
+        overflow: hidden;
+        max-width: 500px;
+        max-height: 350px;
+    }
+
+    .challenges__img_innen{
+        transition: 0.5s ease;
+    }
+
+    //Challenges Mouse-Overlay
+    .challenges__overlay{
+        z-index: 0;
+        grid-area: ch_name;
+        opacity: 0;
+        transition: 0.5s ease;
+        background-color: color(orangov);
+        cursor: pointer;
+    }
+
 }
 .challenges__challenge:hover .challenges__overlay{
     opacity: 1;
@@ -38,39 +75,7 @@
   transform: scale(1.05);
 }
 
-//Challenges Inhalt
-.challenges__names{
-    z-index: 10;
-    grid-area: ch_name;
-    justify-self: center;
-    align-self: center;
-    border: 2px solid color(orang);
-    padding: 8px 18px;
-    transition: 0.3s ease;
-    cursor: pointer;
-}        
 
-.challenges__img{
-    grid-area: ch_name;
-    justify-self: center;
-    overflow: hidden;
-    max-width: 500px;
-    max-height: 350px;
-}
-
-.challenges__img_innen{
-     transition: 0.5s ease;
-}
-
-//Challenges Mouse-Overlay
-.challenges__overlay{
-    z-index: 0;
-    grid-area: ch_name;
-    opacity: 0;
-    transition: 0.5s ease;
-    background-color: color(orangov);
-    cursor: pointer;
-}
 
 /*
 .addToHomescreenButton{

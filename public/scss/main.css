@@ -146,6 +146,54 @@ img {
       grid-template-areas: "ch_name";
 }
 
+.challenges__challenge .challenges__link {
+  z-index: 10;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: ch_name;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.challenges__challenge .challenges__link .challenges__names {
+  border: 2px solid #FF8533;
+  padding: 8px 18px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.challenges__challenge .challenges__img {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: ch_name;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  overflow: hidden;
+  max-width: 500px;
+  max-height: 350px;
+}
+
+.challenges__challenge .challenges__img_innen {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.challenges__challenge .challenges__overlay {
+  z-index: 0;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: ch_name;
+  opacity: 0;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  background-color: rgba(255, 133, 51, 0.6);
+  cursor: pointer;
+}
+
 .challenges__challenge:hover .challenges__overlay {
   opacity: 1;
 }
@@ -158,51 +206,6 @@ img {
 .challenges__challenge:hover .challenges__img .challenges__img_innen {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
-}
-
-.challenges__names {
-  z-index: 10;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: ch_name;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  border: 2px solid #FF8533;
-  padding: 8px 18px;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
-  cursor: pointer;
-}
-
-.challenges__img {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: ch_name;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  overflow: hidden;
-  max-width: 500px;
-  max-height: 350px;
-}
-
-.challenges__img_innen {
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-}
-
-.challenges__overlay {
-  z-index: 0;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: ch_name;
-  opacity: 0;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-  background-color: rgba(255, 133, 51, 0.6);
-  cursor: pointer;
 }
 
 /*
@@ -220,6 +223,10 @@ img {
         height: 35px;
     }
 }*/
+.endurance__challenge {
+  background-color: #0B3C48;
+}
+
 .mobileMenu {
   z-index: 100;
   position: fixed;
